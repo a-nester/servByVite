@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "Витерти пил",
-      "completed": false
+      "completed": true
     },
     {
       "title": "Помити посуд",
@@ -18,6 +18,21 @@
     {
       "id": "8199",
       "title": "Купити шоколад",
+      "completed": false
+    },
+    {
+      "id": "16dc",
+      "title": "Buy a milk",
+      "completed": false
+    },
+    {
+      "id": "b08c",
+      "title": "Купити хліб",
+      "completed": false
+    },
+    {
+      "id": "a765",
+      "title": "Купити воду",
       "completed": false
     }
   ]

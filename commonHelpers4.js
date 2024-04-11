@@ -1,0 +1,8 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";import{a as d}from"./assets/vendor-34f890c2.js";/* empty css                     */const c="http://localhost:3000/todos",r=document.querySelector(".todo__form"),n=document.querySelector(".list");r.addEventListener("submit",m);n.addEventListener("click",_);n.addEventListener("click",h);u();async function o(t={}){const{data:e}=await d(t);return e}function i(t){return t.map(({id:e,title:a,completed:s})=>`
+    <li data-id="${e}" class="list__item">
+            <input type="checkbox" class="list__checkbox" ${s&&"checked"}>
+            <h2 class="list__title">${a}</h2>
+            <button class="list__btn">x<?button>
+        </li>
+    `).join("")}async function u(){try{const t=await o({url:c});n.insertAdjacentHTML("beforeend",i(t))}catch(t){alert(t.message)}}async function m(t){t.preventDefault();const{toDo:e}=t.target.elements;try{const a=await o({method:"POST",url:c,data:{title:e.value,completed:!1}});n.insertAdjacentHTML("beforeend",i([a]))}catch(a){alert(a.message)}finally{r.reset()}}async function h(t){const e=t.target;if(!e.classList.contains("list__checkbox"))return;t.preventDefault();const a=e.closest(".list__item").dataset.id;try{const s=await o({method:"PATCH",url:`${c}/${a}`,data:{completed:t.target.checked}});console.log(s),t.target.checked=s.completed}catch(s){alert(s.message)}}async function _(t){const e=t.target;if(!e.classList.contains("list__btn"))return;const a=e.closest(".list__item"),s=a.dataset.id;try{await o({method:"DELETE",url:`${c}/${s}`}),a.remove()}catch(l){alert(l.message)}}
+//# sourceMappingURL=commonHelpers4.js.map

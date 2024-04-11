@@ -8,7 +8,7 @@
     {
       "title": "Помити посуд",
       "id": "2",
-      "completed": false
+      "completed": true
     },
     {
       "title": "Винести сміття",
@@ -28,11 +28,6 @@
     {
       "id": "b08c",
       "title": "Купити хліб",
-      "completed": false
-    },
-    {
-      "id": "a765",
-      "title": "Купити воду",
       "completed": false
     }
   ]

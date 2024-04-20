@@ -13,21 +13,21 @@
     {
       "title": "Винести сміття",
       "id": "3",
-      "completed": false
+      "completed": true
     },
     {
       "id": "8199",
       "title": "Купити шоколад",
-      "completed": false
+      "completed": true
     },
     {
       "id": "16dc",
       "title": "Buy a milk",
-      "completed": false
+      "completed": true
     },
     {
-      "id": "b08c",
-      "title": "Купити хліб",
+      "id": "5ca3",
+      "title": "Купити воду",
       "completed": false
     }
   ]
